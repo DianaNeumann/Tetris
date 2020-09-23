@@ -70,7 +70,7 @@ int WINAPI WinMain (HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLin
             }
         }
 
-        unsigned long mTime2 = SDL_GetTicks();
+        uint64_t mTime2 = SDL_GetTicks();
 
 		if ((mTime2 - mTime1) > WAIT_TIME){
 			if (mBoard.IsPossibleMovement (mGame.mPosX, mGame.mPosY + 1, mGame.mPiece, mGame.mRotation)){
